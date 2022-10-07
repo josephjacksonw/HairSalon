@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/edit.css">
+
+@model HairSalon.Models.Client
+
+<h2>Are you sure you want to delete this?</h2>
+
+<h1>@Html.DisplayFor(model => model.Name)</h1>
+@using (Html.BeginForm())
+{
+  <button class="btn btn-outline-danger show"type="submit" value="Delete">Delete</button>
+}
+<button class="btn btn-outline-info show">@Html.ActionLink("Back to List", "Index")</button>

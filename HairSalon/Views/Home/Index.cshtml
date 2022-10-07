@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/styles.css">
+
+<h1>Welcome to the Best Clients!</h1>
+
+<div class='container home'>
+  <button class="clientAll btn btn-outline-info btn-block">@Html.ActionLink("See all clients", "Index", "Clients")</button>   
+
+  <button class="stylistAll btn btn-outline-info btn-block">@Html.ActionLink("See all stylists", "Index", "Stylists")</button>
+
+</div>
+

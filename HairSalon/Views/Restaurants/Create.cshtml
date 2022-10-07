@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/edit.css">
+
+@model HairSalon.Models.Client
+
+<h1>Add a client</h1>
+
+@using (Html.BeginForm())
+{
+  @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})<br>
+  <br>
+  @Html.TextBoxFor(model => model.Rating, new { @Type = "number", min="0", max="5", placeholder ="Rating", style = "width: 183px"})<br>
+  <br>
+  @Html.TextBoxFor(model => model.Cost, new { @Type = "number", min="0", max="4", placeholder="Cost", style = "width: 183px"})<br>
+  <br>
+  @Html.TextBoxFor(model => model.Type, new { placeholder = "Type"})<br>
+  <br>
+  @Html.DropDownList("StylistId")
+  <br>
+  <button type="submit" class="btn btn-outline-info add">Add Client</button>
+}
+<button class="btn btn-outline-info show">@Html.ActionLink("Show All Clients", "Index")</button>
