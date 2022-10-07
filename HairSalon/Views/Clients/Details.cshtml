@@ -8,9 +8,7 @@
 <h1>Client Details</h1>
 <hr />
 <h1>@Html.DisplayFor(model => model.Name)</h1>
-<p>@Html.DisplayNameFor(model => model.Rating): @Html.DisplayFor(model => model.Rating) /5</p>
-<p>@Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)</p>
-<p>@Html.DisplayNameFor(model => model.Cost): @Html.DisplayFor(model => model.Cost) /4</p>
+<p>@Html.DisplayNameFor(model => model.Visits): @Html.DisplayFor(model => model.Visits)</p>
 <p>Stylist: @Html.DisplayFor(model => model.Stylist.Name)</p>
 
 <button class="btn btn-outline-info home">@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</button>

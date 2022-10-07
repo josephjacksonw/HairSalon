@@ -11,11 +11,7 @@
 {
   @Html.TextBoxFor(model => model.Name, new { placeholder = "Name"})<br>
   <br>
-  @Html.TextBoxFor(model => model.Rating, new { @Type = "number", min="0", max="5", placeholder ="Rating", style = "width: 183px"})<br>
-  <br>
-  @Html.TextBoxFor(model => model.Cost, new { @Type = "number", min="0", max="4", placeholder="Cost", style = "width: 183px"})<br>
-  <br>
-  @Html.TextBoxFor(model => model.Type, new { placeholder = "Type"})<br>
+  @Html.TextBoxFor(model => model.Visits, new { @Type = "number", min="0", placeholder ="Visits", style = "width: 183px"})<br>
   <br>
   @Html.DropDownList("StylistId")
   <br>
