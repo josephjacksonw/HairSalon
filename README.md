@@ -22,6 +22,13 @@ _Using C#, this program will ask the user if they would like to add a stylist to
 * _Clone the repository to your desktop_
 * _Open the repository in Visual Studio Code_
 * _Open your terminal and navigate to the HairSalon/HairSalon folder_
+* _Create a file titled appsettings.json_
+* _Inside appsettings.json, copy and paste the following code, with your password in the section of [Your Password Here]
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=joseph_jackson;uid=root;pwd=[Your Password Here];"
+  }
+}
 * _Run "$ dotnet build" to build the necessary files to view the project_
 * _Run "$ dotnet run" to run and view the project_
  
