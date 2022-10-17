@@ -17,21 +17,28 @@ _Using C#, this program will ask the user if they would like to add a stylist to
 
  
 ## Setup/Installation Requirements
-
-
-* _Clone the repository to your desktop_
-* _Open the repository in Visual Studio Code_
-* _Open your terminal and navigate to the HairSalon/HairSalon folder_
-* _Create a file titled appsettings.json_
-* _Inside appsettings.json, copy and paste the following code, with your password in the section of [Your Password Here]
+ 
+* _Open up your terminal and navigate to the desired landing folder_
+* _In terminal enter, ' "git clone https://github.com/JosephJacksonw/HairSalon '_
+* _In terminal enter 'code .' to open files in Visual Studio Code_
+* _In VS Code terminal navigate to the HairSalon/HairSalon folder_
+* _Configure files by first running '$ dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0'_
+* _Then run '$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2'_
+* _Run '$ dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0' to install Lazy Loading_
+* _Run '$ dotnet restore'_
+* _Create a file titled 'appsettings.json'_
+* _Enter the following into the file_
+```json
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=joseph_jackson;uid=root;pwd=[Your Password Here];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=joseph_jackson;uid=root;pwd=YOUR_PASSWORD;"
   }
 }
-* _Run "$ dotnet build" to build the necessary files to view the project_
-* _Run "$ dotnet run" to run and view the project_
- 
+```
+* _To setup the database you open up MySQL and under 'Administration' select 'Data Import'_
+* _Check the 'Import from self contained file' option and enter the file path of the Database within HairSalon, then start Import_
+* _Enter '$ dotnet run to start program'_
+
 ## Known Bugs
  
 * _No known bugs_
